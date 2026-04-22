@@ -130,6 +130,12 @@ namespace Laboratorna8 {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->label15 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
@@ -138,7 +144,23 @@ namespace Laboratorna8 {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
+			this->Column9 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column10 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column11 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column12 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column13 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column14 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column15 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column16 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
@@ -150,28 +172,6 @@ namespace Laboratorna8 {
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label15 = (gcnew System::Windows::Forms::Label());
-			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column9 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column10 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column11 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column12 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column13 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column14 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column15 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column16 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -310,6 +310,73 @@ namespace Laboratorna8 {
 			this->tabPage2->Text = L"Завдання 2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label15->Location = System::Drawing::Point(70, 446);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(154, 20);
+			this->label15->TabIndex = 29;
+			this->label15->Text = L"Не склав залік: 0";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label11->Location = System::Drawing::Point(76, 422);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(129, 20);
+			this->label11->TabIndex = 28;
+			this->label11->Text = L"Склав залік: 1";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label10->Location = System::Drawing::Point(76, 310);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(70, 20);
+			this->label10->TabIndex = 27;
+			this->label10->Text = L"Залік 5";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label9->Location = System::Drawing::Point(76, 277);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(70, 20);
+			this->label9->TabIndex = 26;
+			this->label9->Text = L"Залік 4";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label8->Location = System::Drawing::Point(76, 249);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(70, 20);
+			this->label8->TabIndex = 25;
+			this->label8->Text = L"Залік 3";
+			this->label8->Click += gcnew System::EventHandler(this, &MyForm::label8_Click);
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label14->Location = System::Drawing::Point(76, 216);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(70, 20);
+			this->label14->TabIndex = 24;
+			this->label14->Text = L"Залік 2";
+			// 
 			// label13
 			// 
 			this->label13->AutoSize = true;
@@ -317,9 +384,9 @@ namespace Laboratorna8 {
 				static_cast<System::Byte>(204)));
 			this->label13->Location = System::Drawing::Point(416, 294);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(102, 20);
+			this->label13->Size = System::Drawing::Size(242, 20);
 			this->label13->TabIndex = 23;
-			this->label13->Text = L"Відмінники";
+			this->label13->Text = L"Студенти які склали заліки";
 			// 
 			// label12
 			// 
@@ -402,6 +469,46 @@ namespace Laboratorna8 {
 			this->dataGridView2->Size = System::Drawing::Size(597, 140);
 			this->dataGridView2->TabIndex = 12;
 			// 
+			// Column9
+			// 
+			this->Column9->HeaderText = L"ПІП";
+			this->Column9->Name = L"Column9";
+			// 
+			// Column10
+			// 
+			this->Column10->HeaderText = L"Курс";
+			this->Column10->Name = L"Column10";
+			// 
+			// Column11
+			// 
+			this->Column11->HeaderText = L"Група";
+			this->Column11->Name = L"Column11";
+			// 
+			// Column12
+			// 
+			this->Column12->HeaderText = L"Залік 1";
+			this->Column12->Name = L"Column12";
+			// 
+			// Column13
+			// 
+			this->Column13->HeaderText = L"Залік 2";
+			this->Column13->Name = L"Column13";
+			// 
+			// Column14
+			// 
+			this->Column14->HeaderText = L"Залік 3";
+			this->Column14->Name = L"Column14";
+			// 
+			// Column15
+			// 
+			this->Column15->HeaderText = L"Залік 4";
+			this->Column15->Name = L"Column15";
+			// 
+			// Column16
+			// 
+			this->Column16->HeaderText = L"Залік 5";
+			this->Column16->Name = L"Column16";
+			// 
 			// dataGridView1
 			// 
 			this->dataGridView1->AllowUserToAddRows = false;
@@ -417,15 +524,55 @@ namespace Laboratorna8 {
 			this->dataGridView1->Size = System::Drawing::Size(597, 169);
 			this->dataGridView1->TabIndex = 11;
 			// 
+			// Column1
+			// 
+			this->Column1->HeaderText = L"ПІП";
+			this->Column1->Name = L"Column1";
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"Курс";
+			this->Column2->Name = L"Column2";
+			// 
+			// Column3
+			// 
+			this->Column3->HeaderText = L"Група";
+			this->Column3->Name = L"Column3";
+			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"Залік 1";
+			this->Column4->Name = L"Column4";
+			// 
+			// Column5
+			// 
+			this->Column5->HeaderText = L"Залік 2";
+			this->Column5->Name = L"Column5";
+			// 
+			// Column6
+			// 
+			this->Column6->HeaderText = L"Залік 3";
+			this->Column6->Name = L"Column6";
+			// 
+			// Column7
+			// 
+			this->Column7->HeaderText = L"Залік 4";
+			this->Column7->Name = L"Column7";
+			// 
+			// Column8
+			// 
+			this->Column8->HeaderText = L"Залік 5";
+			this->Column8->Name = L"Column8";
+			// 
 			// button6
 			// 
 			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button6->Location = System::Drawing::Point(683, 277);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(136, 37);
+			this->button6->Size = System::Drawing::Size(208, 37);
 			this->button6->TabIndex = 10;
-			this->button6->Text = L"Відмінники";
+			this->button6->Text = L"Склали заліки";
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
 			// 
@@ -524,153 +671,6 @@ namespace Laboratorna8 {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 26);
 			this->textBox1->TabIndex = 0;
-			// 
-			// label14
-			// 
-			this->label14->AutoSize = true;
-			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label14->Location = System::Drawing::Point(76, 216);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(70, 20);
-			this->label14->TabIndex = 24;
-			this->label14->Text = L"Залік 2";
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label8->Location = System::Drawing::Point(76, 249);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(70, 20);
-			this->label8->TabIndex = 25;
-			this->label8->Text = L"Залік 3";
-			this->label8->Click += gcnew System::EventHandler(this, &MyForm::label8_Click);
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label9->Location = System::Drawing::Point(76, 277);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(70, 20);
-			this->label9->TabIndex = 26;
-			this->label9->Text = L"Залік 4";
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label10->Location = System::Drawing::Point(76, 310);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(70, 20);
-			this->label10->TabIndex = 27;
-			this->label10->Text = L"Залік 5";
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label11->Location = System::Drawing::Point(76, 422);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(129, 20);
-			this->label11->TabIndex = 28;
-			this->label11->Text = L"Склав залік: 1";
-			// 
-			// label15
-			// 
-			this->label15->AutoSize = true;
-			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label15->Location = System::Drawing::Point(70, 446);
-			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(154, 20);
-			this->label15->TabIndex = 29;
-			this->label15->Text = L"Не склав залік: 0";
-			// 
-			// Column1
-			// 
-			this->Column1->HeaderText = L"ПІП";
-			this->Column1->Name = L"Column1";
-			// 
-			// Column2
-			// 
-			this->Column2->HeaderText = L"Курс";
-			this->Column2->Name = L"Column2";
-			// 
-			// Column3
-			// 
-			this->Column3->HeaderText = L"Група";
-			this->Column3->Name = L"Column3";
-			// 
-			// Column4
-			// 
-			this->Column4->HeaderText = L"Залік 1";
-			this->Column4->Name = L"Column4";
-			// 
-			// Column5
-			// 
-			this->Column5->HeaderText = L"Залік 2";
-			this->Column5->Name = L"Column5";
-			// 
-			// Column6
-			// 
-			this->Column6->HeaderText = L"Залік 3";
-			this->Column6->Name = L"Column6";
-			// 
-			// Column7
-			// 
-			this->Column7->HeaderText = L"Залік 4";
-			this->Column7->Name = L"Column7";
-			// 
-			// Column8
-			// 
-			this->Column8->HeaderText = L"Залік 5";
-			this->Column8->Name = L"Column8";
-			// 
-			// Column9
-			// 
-			this->Column9->HeaderText = L"ПІП";
-			this->Column9->Name = L"Column9";
-			// 
-			// Column10
-			// 
-			this->Column10->HeaderText = L"Курс";
-			this->Column10->Name = L"Column10";
-			// 
-			// Column11
-			// 
-			this->Column11->HeaderText = L"Група";
-			this->Column11->Name = L"Column11";
-			// 
-			// Column12
-			// 
-			this->Column12->HeaderText = L"Залік 1";
-			this->Column12->Name = L"Column12";
-			// 
-			// Column13
-			// 
-			this->Column13->HeaderText = L"Залік 2";
-			this->Column13->Name = L"Column13";
-			// 
-			// Column14
-			// 
-			this->Column14->HeaderText = L"Залік 3";
-			this->Column14->Name = L"Column14";
-			// 
-			// Column15
-			// 
-			this->Column15->HeaderText = L"Залік 4";
-			this->Column15->Name = L"Column15";
-			// 
-			// Column16
-			// 
-			this->Column16->HeaderText = L"Залік 5";
-			this->Column16->Name = L"Column16";
 			// 
 			// MyForm
 			// 
